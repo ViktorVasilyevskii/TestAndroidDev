@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_progress_bar">20dp</dimen>
+    <dimen name="margin_horizontal">20dp</dimen>
+    <dimen name="margin_vertical">10dp</dimen>
+
+    <dimen name="lottie_download_one_screen_width">100dp</dimen>
+    <dimen name="lottie_download_one_screen_height">100dp</dimen>
+    <dimen name="no_lottie_animation_padding">10dp</dimen>
+
+    <dimen name="radius_progress_bar">40dp</dimen>
+
+    <dimen name="radius_button_min">40dp</dimen>
+    <dimen name="radius_button">10dp</dimen>
+    <dimen name="button_margin_vertical">10dp</dimen>
+    <dimen name="button_padding_min">5dp</dimen>
+    <dimen name="button_weight">170dp</dimen>
+
+    <dimen name="button_padding">10dp</dimen>
+
+    <dimen name="progress_bar_one_screen">20dip</dimen>
+    <dimen name="progress_bar_random">10dip</dimen>
+    <dimen name="progress_bar_load_server">20dip</dimen>
+
+    <dimen name="padding_timer">5dp</dimen>
+    <dimen name="size_timer">40sp</dimen>
+    <dimen name="margin_timer">10dp</dimen>
+    <dimen name="size_text_timer">12sp</dimen>
+
+    <dimen name="height_item_rating">120dp</dimen>
+    <dimen name="width_container_item_card_rating">300dp</dimen>
+    <dimen name="item_rating_image_width">100dp</dimen>
+    <dimen name="item_rating_image_height">100dp</dimen>
+
+    <dimen name="height_custom_alert">300dp</dimen>
+    <dimen name="height_recycler_rating">150dp</dimen>
+
+</resources>

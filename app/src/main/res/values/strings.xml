@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TestAndroidDev</string>
+
+    <string name="text_header_loading">Loading…</string>
+    <string name="tools_text_value_progress">20%</string>
+    <string name="title_load_data_server">Load Data from server…</string>
+
+    <string name="text_header_lottie">Lottie animation…</string>
+    <string name="no_lottie_animation">Lottie\nAnimation</string>
+    <string name="value_loading">%d%%</string>
+
+    <string name="header_button_animation">Frame 5</string>
+    <string name="button_start_animation">Start Animation</string>
+    <string name="button_stop_animation">Stop Animation</string>
+    <string name="button_hide_show_animation">Hide / Show Animation</string>
+    <string name="button_show_custom_alert">Show custom alert</string>
+    <string name="button_go_second_screen">Go to second screen</string>
+
+    <string name="title_recycler">Ratings</string>
+    <string name="title_progress_random_one">Random value</string>
+    <string name="title_progress_random_two">Random value 2</string>
+    <string name="hours">hours</string>
+    <string name="minutes">minutes</string>
+    <string name="seconds">seconds</string>
+    
+    <string name="button_randomize_values">Randomize values</string>
+    <string name="text_button_custom_alert_dialog">Close</string>
+</resources>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/header_random_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back"
+        />
+
+    <TextView
+        android:id="@+id/title_progress_random_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_random_progress_bar"
+        android:text="@string/title_progress_random_one"
+        />
+
+    <TextView
+        android:id="@+id/text_value_progress_random_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title_progress_random_one"
+        tools:text="@string/tools_text_value_progress"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_random_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical"
+        android:progress="0"
+        style="@style/ProgressRandom"
+        android:max="100"
+        app:layout_constraintTop_toBottomOf="@+id/title_progress_random_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/title_progress_random_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar_random_one"
+        android:text="@string/title_progress_random_two"
+        />
+
+    <TextView
+        android:id="@+id/text_value_progress_random_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title_progress_random_two"
+        tools:text="@string/tools_text_value_progress"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_random_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical"
+        android:progress="0"
+        style="@style/ProgressRandom"
+        android:max="100"
+        app:layout_constraintTop_toBottomOf="@+id/title_progress_random_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/button_randomize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_screen_one"
+        android:gravity="center"
+        android:padding="@dimen/button_padding"
+        android:text="@string/button_randomize_values"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar_random_two"
+        app:layout_constraintBottom_toTopOf="@id/minutes"
+        />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01"
+        android:background="@drawable/background_dark"
+        android:textSize="@dimen/size_timer"
+        android:layout_marginEnd="@dimen/margin_timer"
+        android:padding="@dimen/padding_timer"
+        app:layout_constraintEnd_toStartOf="@id/minutes"
+        app:layout_constraintTop_toTopOf="@id/minutes"
+        />
+
+    <TextView
+        android:id="@+id/title_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hours"
+        android:textSize="@dimen/size_text_timer"
+        app:layout_constraintTop_toBottomOf="@id/hours"
+        app:layout_constraintEnd_toEndOf="@id/hours"
+        app:layout_constraintStart_toStartOf="@id/hours"
+        />
+
+
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="@dimen/size_timer"
+        android:padding="@dimen/padding_timer"
+        android:background="@drawable/background_dark"
+        app:layout_constraintTop_toBottomOf="@id/button_randomize"
+        app:layout_constraintBottom_toTopOf="@id/title_progress_load_server"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5"
+        />
+
+    <TextView
+        android:id="@+id/title_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minutes"
+        android:textSize="@dimen/size_text_timer"
+        app:layout_constraintTop_toBottomOf="@id/minutes"
+        app:layout_constraintEnd_toEndOf="@id/minutes"
+        app:layout_constraintStart_toStartOf="@id/minutes"
+        />
+
+    <TextView
+        android:id="@+id/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="@dimen/size_timer"
+        android:layout_marginStart="@dimen/margin_timer"
+        android:padding="@dimen/padding_timer"
+        android:background="@drawable/background_dark"
+        app:layout_constraintStart_toEndOf="@id/minutes"
+        app:layout_constraintTop_toTopOf="@id/minutes"
+        />
+
+    <TextView
+        android:id="@+id/title_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seconds"
+        android:textSize="@dimen/size_text_timer"
+        app:layout_constraintTop_toBottomOf="@id/seconds"
+        app:layout_constraintEnd_toEndOf="@id/seconds"
+        app:layout_constraintStart_toStartOf="@id/seconds"
+        />
+
+
+    <TextView
+        android:id="@+id/title_progress_load_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:text="@string/title_load_data_server"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/progress_bar_load_server"
+        />
+
+    <TextView
+        android:id="@+id/text_value_load_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title_progress_load_server"
+        tools:text="@string/tools_text_value_progress"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_load_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:progress="0"
+        style="@style/ProgressLoadServer"
+        android:max="100"
+        app:layout_constraintBottom_toTopOf="@id/title_recycler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/title_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/recyclerviewRating"
+        android:text="@string/title_recycler"
+        android:textColor="@color/dimmed_header"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewRating"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_recycler_rating"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/progress">
+        <scale
+            android:useIntrinsicSizeAsMinimum="true"
+            android:scaleWidth="100%"
+            android:drawable="@drawable/color_progress_bar_one_screen" />
+    </item>
+</layer-list>
